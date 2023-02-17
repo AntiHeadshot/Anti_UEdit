@@ -1,0 +1,27 @@
+﻿<Window x:Class="Anti_UEdit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anti_UEdit"
+        mc:Ignorable="d"
+        Title="Anti U-Edit" Height="450" Width="800">
+    <DockPanel LastChildFill="true">
+        <TabControl DockPanel.Dock="Right"
+                    VerticalAlignment="Stretch"
+                    Width="400">
+            <TabItem Header="Selection">
+
+            </TabItem>
+            <TabItem Header="Props">
+
+            </TabItem>
+            <TabItem Header="Tools">
+
+            </TabItem>
+        </TabControl>
+        <local:UniverseView Items="{Binding Units}" SelectedItems="{Binding SelectedItems}">
+            
+        </local:UniverseView>
+    </DockPanel>
+</Window>
